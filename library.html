@@ -135,6 +135,77 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 12px;
       line-height: 1.9;
+/* 顶部导航：与声音收藏馆原有暖米白风格统一 */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #DED9D1;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #302D2A;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.site-brand span {
+  color: #89837B;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 7px 13px;
+  border: 1px solid #DED9D1;
+  border-radius: 22px;
+  background: #FFFEFA;
+  color: #89837B;
+  font-size: 11px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.site-nav a:hover {
+  border-color: #A58B73;
+  background: #E8DFD3;
+  color: #302D2A;
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-nav {
+    gap: 6px;
+  }
+
+  .site-nav a {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+}
+      
     }
   </style>
 </head>
@@ -147,18 +218,17 @@
       <span>EST. 2026</span>
     </div>
 
-    <header class="hero">
-      <div class="eyebrow">A COLLECTION OF VOICES</div>
+    <header class="site-header">
+  <a class="site-brand" href="./index.html">
+    JIMIN ARCHIVE
+    <span>朴智旻个人收藏馆</span>
+  </a>
 
-      <h1>JIMIN<br>AUDIO<br>ARCHIVE.</h1>
-
-      <div class="intro">
-        有些瞬间会随着时间远去，<br>
-        但声音可以把记忆留下。<br><br>
-        这里收藏着与朴智旻有关的声音，<br>
-        也收藏着那些想要反复回听的时刻。
-      </div>
-    </header>
+  <nav class="site-nav">
+    <a href="./index.html">主页</a>
+    <a href="./videos.html">视频收藏馆</a>
+  </nav>
+</header>
 
     <section>
       <div class="section-title">
